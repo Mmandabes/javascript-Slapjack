@@ -1,0 +1,43 @@
+<html>
+<head>
+    <link href="slapjack.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+
+        <h1 id="header">Game Start!</h1>
+        <div id="popUp" style="display: none;"><p>This is not your turn</p> </div>
+    <div id="opponent-deck">
+        <div id="opponent-face">🙂</div>
+        <div class="deck card card-back"></div>
+        
+    </div>
+    <div id="discard-pile">
+        
+        <div class="card card-front">
+            
+            <div class="card-number right-side-up"></div>
+            <div class="card-art"></div>
+            <div class="card-number flipped"></div>
+        </div>
+    </div>
+    
+    <div id="player-deck" class ="active">
+        <div id="players-face">🙂</div>
+        <div class="deck card card-back">
+
+        </div>
+
+    </div>
+</div>
+
+<div id="play-again-wrapper">
+    <div id="win-lose-status"></div>
+    <div id="play-again-control">
+        <button onclick="location.reload()">Play Again</button>
+    </div>
+</div>
+<script src="slapjack.js"></script>
+</body>
+</html>
